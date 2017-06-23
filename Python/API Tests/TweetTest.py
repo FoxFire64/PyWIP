@@ -16,11 +16,6 @@ if __name__ == "__main__":
     print('My Friends: ' + str(me.friends_count))
     print('My Screen Name: ' + me.screen_name)
 
-    mom = api.get_user('Debnheirs')
-    print('Mom\'s name: ' + mom.name)
-    print('Mom\'s location: ' + mom.location)
-    print('Mom\'s image is: ' + mom.profile_image_url)
-
     myTimeline = api.home_timeline(count = 3)
     for tweets in myTimeline:
         print tweets.text
@@ -46,4 +41,4 @@ if __name__ == "__main__":
 
     StdOutListener = StdOutListener()
     myStream = tweepy.Stream(auth=api.auth, listener=StdOutListener)
-    myStream.filter(track=['deborah'])
+    myStream.filter(track=['acacia'])
