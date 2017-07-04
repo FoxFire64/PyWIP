@@ -1,4 +1,4 @@
-import random, time
+import random
 
 
 def merge(A, p, q, r):
@@ -12,7 +12,7 @@ def merge(A, p, q, r):
             L[i] = A[p + i]
             print(L[i])
         for j in range(len2):
-            R[i] = A[q + j]
+            R[j] = A[q + j]
         L[len1] = None
         R[len2] = None
         i, j = 0, 0
@@ -48,7 +48,6 @@ def merge_sort2(A):
         merge_sort2(left)
         merge_sort2(right)
 
-
         i, j, k = 0, 0, 0
         while i < len(left) and j < len(right):
             if left[i] < right[j]:
@@ -75,6 +74,6 @@ def merge_sort2(A):
 if __name__ == "__main__":
     rlist = random.sample(xrange(100), 50)
     print(rlist)
-    #merge_sort(rlist, 0, len(rlist))
+    # merge_sort(rlist, 0, len(rlist))
     merge_sort2(rlist)
     print(rlist)
