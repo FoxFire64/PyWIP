@@ -72,7 +72,7 @@ def merge_sort2(A):
 
 
 if __name__ == "__main__":
-    rlist = random.sample(xrange(100), 50)
+    rlist = random.sample(range(100), 50)
     print(rlist)
     # merge_sort(rlist, 0, len(rlist))
     merge_sort2(rlist)
