@@ -10,7 +10,7 @@ To utilize the CLI, please follow the maximum allowed tweet count and query coun
 
 Assumptions:
     - This CLI will have to utilize a string and integer argument, respectively.
-    - The user is using Python 2.7 (most common enviro of twitter API user)
+    - The user is using Python 2.7 (most compatible with tweepy)
     - The user will want to view a likely range of 1 to 10 tweets, but may request more.
     - The user may write the twitter handle without an '@' symbol
     - The user may not know how to authorize the app, and will need to be URL-directed.
