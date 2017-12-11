@@ -11,8 +11,8 @@ if __name__ == "__main__":
     print("Please visit this url to authorize the app:")
     print(authUrl)
     print("Please enter the Auth PIN: ")
+    authPIN = input().strip()
 
-    authPIN = raw_input().strip()
     token = auth.get_access_token(verifier=authPIN)
     auth.set_access_token(token[0], token[1])
 
@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
     my_timeline = api.home_timeline(count = 3)
     for tweets in my_timeline:
-        print tweets.text
+        print(tweets.text)
 
     #for friend in tweepy.Cursor(api.friends).items():
     #    print friend.name
