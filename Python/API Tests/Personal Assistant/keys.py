@@ -1,0 +1,5 @@
+OWM_key = "1eeed3cff35cd195f827e4e4eb463d7c"
+wolfram_key = "75TTPT-6J63VH47ET"
+gcloud_key = "AIzaSyDe91hLh_UGP5ClHwO81a8Fiby1FNXGDL8"
+twilio_sid = "AC8e1512e6b27d3d7f84856d681004314d"
+twilio_token = "7aaf98ca816508f77d905461ad0d21c2"
