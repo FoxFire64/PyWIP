@@ -1,12 +1,13 @@
 class Lookups():
     def __init__(self):
-        self.keep_dict = dict.fromkeys(self.get_quit_lookup(), 'self.quit')
+        self.keep_dict = dict.fromkeys(self.get_quit_lookup(), 'self.quit_pypir')
         self.keep_dict.update(dict.fromkeys(self.get_weather_lookup(), 'self.weather'))
         self.keep_dict.update(dict.fromkeys(self.get_math_lookup(), 'self.wolfram'))
         self.keep_dict.update(dict.fromkeys(self.get_twitter_lookup(), 'self.tweet'))
         self.keep_dict.update(dict.fromkeys(self.get_calendar_lookup(), 'self.calendar'))
         self.keep_dict.update(dict.fromkeys(self.get_search_lookup(), 'self.wiki'))
         self.keep_dict.update(dict.fromkeys(self.get_call_lookup(), 'self.call'))
+        self.keep_dict.update(dict.fromkeys(self.get_help_lookup(), 'self.help'))
 
         self.strike_dict = self.get_strike_lookup()
 
@@ -19,7 +20,8 @@ class Lookups():
         return weather_lookup
 
     def get_math_lookup(self):
-        math_lookup = ['calculate', 'plus', 'minus', 'divided', 'multiply', 'multiplied', 'times', '+', '-', '*', '/', 'of', 'determine']
+        math_lookup = ['calculate', 'plus', 'minus', 'divided', 'multiply', 'multiplied', 'times', '+', '-', '*', '/',
+                       'of', 'determine']
         return math_lookup
 
     def get_twitter_lookup(self):
@@ -41,3 +43,7 @@ class Lookups():
     def get_strike_lookup(self):
         strike_lookup = ['what', 'what\'s', 'is', 'the', 'in', 'a', 'an', 'like', 'yes', 'no', 'can', 'now']
         return strike_lookup
+
+    def get_help_lookup(self):
+        help_lookup = ['help', 'tutorial', 'walkthrough', 'what can you do']
+        return help_lookup
