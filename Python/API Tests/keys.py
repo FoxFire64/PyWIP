@@ -1,0 +1,7 @@
+owm_key = "1eeed3cff35cd195f827e4e4eb463d7c"
+wolfram_key = "75TTPT-6J63VH47ET"
+twilio_sid = "ACd94149e4f31c64fa1426769245fd1d09"
+twilio_token = "fead9729ed389f5dc31f4f79c9b480a2"
+gmaps_directions_key = "AIzaSyCsL8_qCCPnDRCXD5s2hdCKku16UTno2Pg"
+gmaps_geolocation_key = "AIzaSyDp_7iMEQzMB1mSL9eEZvVKXi98EafJ_rk"
+gmaps_geocoding_key = "AIzaSyD2j-izc1mf0WbZsDJxBcR7SKx8i8t6kQo"
